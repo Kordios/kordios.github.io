@@ -1,0 +1,72 @@
+body{
+    background-image: url(élément/FondRoi2.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    transition: background-image 0.5s ease;
+}
+
+div.BaseStructure{
+    border-radius: 1px;
+    width: 300px; 
+    padding: 90px;
+    background-color: rgba(255, 255, 255, 0.8); /* La dernière valeur permet de modif la transparence */
+    border: 2px solid rgba(0, 0, 0, 0.55); 
+    border-radius: 10px; /* Permet d'arrondir les angles (Voir s'il n'y a pas mieux */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Fait des ombres, je */
+    position: relative;
+    place-items: center;
+    margin: auto; /* Centre les items automatiaquement (C'est trop bien) */
+}
+
+.menuSuite{
+    background: linear-gradient(135deg, #75777c, #2b2f36); /* Dégradé laser '-' */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    z-index: 1; /* Pour écrire dans les items, enfin, dessus, pour la priorité */
+}
+
+.menu{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox <-- Je ne l'aime pas, mais pas le choix, je n'ai pas trouvé mieux */
+    justify-content: center; 
+}
+
+.menu li{
+    position: relative; /* Pour donner l'effet */
+}
+
+.menu li a{
+    display: block; 
+    color: white;
+    text-align: center; 
+    padding: 15px 20px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; /* Anecdote : J'ai découvert qu'on pouvait faire des transitions grâce à Youtube, qui en utilise sur son site. */
+    border-radius: 25px;
+}
+
+.menu li a:hover{
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.1); /* J'ai chercher 30 minutes un truc qui y ressemble. Tom. Tu as intéret à être clément dans ton jugement. (C'est un zoom au cas où j'oublie) */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.menu li a:after{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
