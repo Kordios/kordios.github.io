@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>:] LAIRHEURE DEUX GRAMMERE AIT VAULONGTERRE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="TheStyle.css" rel="stylesheet" type="text/css"/>
+        <bgsound src="élément/Non/TrollFace2.mp4" loop="1" volume="-200"></bgsound>
+  </head>
+  <body>
+    <video src="élément/Non/TrollFace2.mp4" aloop=false autoplay=false muted=false>...</video>
+    <a href="Index.html">A E I O U Y</a>
+  </body>
+</html> 
