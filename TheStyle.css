@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+body>img{
+    width: 10px;
+    position: fixed;
+    position: center;
+}
+
+body>p{
+    display: inline-block;
+    animation: rotation 5s infinite linear;
+}
